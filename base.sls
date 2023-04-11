@@ -5,5 +5,6 @@ base installation:
         - tmux
         - ranger
         - curl
-  include: base-root
-  include: base-ethan
+  include:
+    - base-root
+    - base-ethan
