@@ -3,3 +3,4 @@ base installation:
     - pkgs:
       - vim
       - tmux
+      - ranger
