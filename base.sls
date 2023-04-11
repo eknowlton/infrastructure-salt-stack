@@ -5,20 +5,5 @@ base installation:
         - tmux
         - ranger
         - curl
-  user.present:
-    - fullname: Ethan
-    - shell: /bin/bash
-    - home: /home/ethan
-    - groups:
-        - ethan
-        - adm
-        - dialout
-        - cdrom
-        - floppy
-        - sudo
-        - audio
-        - dip
-        - video
-        - plugdev
-        - netdev
-        - lxd
+  include: base-root
+  include: base-ethan
