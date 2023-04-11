@@ -5,8 +5,20 @@ base installation:
         - tmux
         - ranger
         - curl
-  file.managed:
-    - name: /root/.vimrc
-    - source: salt://files/.vimrc
-    - user: root
-    - group: root
+  user.present:
+    - fullname: Ethan
+    - shell: /bin/bash
+    - home: /home/ethan
+    - groups:
+        - ethan
+        - adm
+        - dialout
+        - cdrom
+        - floppy
+        - sudo
+        - audio
+        - dip
+        - video
+        - plugdev
+        - netdev
+        - lxd

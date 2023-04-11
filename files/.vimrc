@@ -57,6 +57,7 @@ autocmd FileType json syntax match Comment +\/\/.\+$+
 
 autocmd BufEnter *.tsx set filetype=typescript.tsx
 autocmd BufEnter *.jsx set filetype=javascript.jsx
+autocmd BufEnter *.sls set filetype=yaml
 
 autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
 
