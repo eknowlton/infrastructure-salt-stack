@@ -1,11 +1,12 @@
 base installation:
   pkg.installed:
     - pkgs:
-      - vim
-      - tmux
-      - ranger
-      - curl
-  cmd.run:
-    - name: |
-      curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
-        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+        - vim
+        - tmux
+        - ranger
+        - curl
+  file.managed:
+    - name: /root/.vimrc
+    - source: salt://files/.vimrc
+    - user: root
+    - group: root
